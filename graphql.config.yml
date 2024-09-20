@@ -1,0 +1,10 @@
+schema: ./path/to/schema.graphql
+extensions:
+  endpoints:
+    Default GraphQL Endpoint:
+      url: https://voxmap.test/api/graphql
+      headers:
+        user-agent: JS GraphQL
+        introspect: false
+        Authorization: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3MDIwMjAzMzMsImV4cCI6MTcwMjYyNTEzMywicm9sZXMiOlsiUk9MRV9TVVBFUl9BRE1JTiJdLCJlbWFpbCI6ImFkbWluQHJheWVuc29mdC5jb20ifQ.jMxZpuR0-xJGcakaaNvy8e2hG8xHWoNFpSfAtEHhmpIZ8MIpVSXaoZ_D_D5HVeFyw5BdbKqWDbq5zuStNXtR8VNbmvRHPqwo_3OPmQ7AWIaBzYWAHe5MtLIcFKZ1dwIJlSmpkcZS7LW4zOOepTvrck8p7FDsugPjKHf5X8GgsIG4f6fIexCIQGVWdsTE_aW84WrJ2zqmZa_gojn3B_s7xJ0ChDoHCZKfOxaXo_d9likNjfLpp08hQCX8Jtxc9_W__m0rc1AgRvqCoK9BZQrIlQLHgPucbvGBNXaHD7ms_n7e8byHIiuFgDQVYNW-OkrDeyupC3R5gLmaRExGA1hzTw'
+

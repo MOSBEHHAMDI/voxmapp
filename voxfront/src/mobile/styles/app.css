@@ -1,0 +1,100 @@
+:root {
+    --main-color: #E5992C;
+    --grey-color: #f2f2f2;
+    --green-color :  #59b300;
+    --secondary-color: #e04c34;
+    --pale-color: #FAECD9;
+    --pane-padding: 5px 42px;
+}
+
+.main-bg {
+    background: var(--main-color) !important;
+}
+
+.grey-bg {
+    background: var(--grey-color) !important;
+}
+.pale-bg {
+    background: var(--pale-color) !important;
+}
+
+.secondary-bg {
+    background: var(--secondary-color) !important;
+}
+
+.border-11 {
+    border-radius: 11px !important;
+}
+
+.main {
+    color: var(--main-color) !important;
+}
+.green {
+    color: var(--green-color) !important;
+}
+.main-border {
+    border: solid 3px var(--main-color) !important;
+}
+
+.main-border-1 {
+    border: solid 1px var(--main-color) !important;
+}
+
+.white-dashed-border {
+    border: dashed 1px white !important;
+}
+
+.main-border-left {
+    border-left: solid 1px var(--main-color) !important;
+}
+
+.main-border-right {
+    border-right: solid 1px var(--main-color) !important;
+}
+
+.main-border-bottom {
+    border-bottom: solid 1px var(--main-color) !important;
+}
+
+.secondary-bg {
+    background: var(--secondary-color) !important;
+}
+
+.secondary {
+    color: var(--secondary-color) !important;
+}
+
+.hpx-65 {
+    height: 65px
+}
+
+.border-8 {
+    border-radius: 8px !important;
+}
+
+.border-dashed {
+    border: var(--main-color) 1px dashed !important;
+}
+
+.breadcrumb {
+    border-bottom: solid var(--main-color) 1px !important;
+}
+
+.v-field--variant-solo {
+    border-radius: 8px;
+    box-shadow: unset;
+}
+
+.float-btn {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.rounded-10 {
+    border-radius: 15px 15px 0 0 !important;
+}

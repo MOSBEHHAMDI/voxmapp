@@ -1,0 +1,387 @@
+:root {
+    --main-color: #3988b0;
+    --main-hoover-color: #7bbfe0;
+    --secondary-color: #E4EFF4;
+    --pane-padding: 5px 42px;
+}
+
+.main-bg {
+    background: var(--main-color) !important;
+}
+
+.grey-border{
+    border: solid 1px #e5e5e5;
+}
+
+.secondary-bg {
+    background: var(--secondary-color) !important;
+}
+
+.main {
+    color: var(--main-color) !important;
+}
+
+.main-border {
+    border-top: solid 2px var(--main-color) !important;
+    border-bottom: solid 0 var(--main-color);
+    border-left: solid 2px var(--main-color) !important;
+    border-right: solid 2px var(--main-color) !important;
+}
+
+.white-dashed-border {
+    border: dashed 1px white !important;
+}
+
+.main-border-left {
+    border-left: solid 1px var(--main-color) !important;
+}
+
+.main-border-right {
+    border-right: solid 1px var(--main-color) !important;
+}
+
+
+.secondary-bg {
+    background: var(--secondary-color) !important;
+}
+
+.secondary {
+    color: var(--secondary-color) !important;
+}
+
+.v-toolbar[data-name="breadcrumb"] {
+    border-top: solid var(--main-color) 4px !important;
+    border-bottom: solid var(--main-color) 2px !important;
+}
+
+.hpx-65 {
+    height: 65px
+}
+
+.border-8 {
+    border-radius: 8px !important;
+}
+
+.list-text {
+    color: var(--main-color);
+    font-weight: normal !important;
+    text-transform: capitalize;
+}
+
+#nav-drawer {
+    padding-top: 10px;
+    border: unset !important;
+}
+
+#nav-drawer button {
+    margin-bottom: 25px !important;
+}
+
+.active-menu-link {
+    border: solid var(--main-color) 1px;
+    border-radius: 5px;
+}
+
+.border-dashed {
+    border: var(--main-color) 1px dashed !important;
+}
+
+#nav-drawer button i {
+    font-size: 28px !important;
+}
+
+label[for='keep_logged_in'] {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.v-input__append {
+    margin: 0 !important;
+}
+
+.v-field {
+    padding: 0 !important;
+}
+
+.main-thin-border {
+    border: 1px solid var(--main-color) !important;
+    border-radius: 8px !important;
+}
+
+.rounded-8 {
+    border-radius: 8px;
+}
+
+.rounded-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.rounded-bottom {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.special_autocomplete .v-field__input {
+    padding: 0 !important;
+    background: transparent !important;
+    min-height: 33px !important;
+    height: 33px !important;
+    color: var(--main-color) !important;
+}
+
+.metadata .v-field {
+    border: 1px solid var(--main-color) !important;
+    border-radius: 8px;
+}
+
+.special_autocomplete .v-field__field {
+    padding: 5px !important;
+}
+
+.special_input input {
+    background: transparent !important;
+    min-height: 20px !important;
+    height: 20px !important;
+    color: var(--main-color) !important;
+}
+
+.special_input .v-field {
+    padding: 5px !important;
+}
+
+.list_filter .special_input .v-field {
+    padding: 0 !important;
+}
+
+.list_filter .special_autocomplete .v-field__field {
+    padding: 0 !important;
+}
+
+.special_input .v-input__control, .special_autocomplete .v-input__control{
+    padding: 3px 10px 3px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background: white;
+    border-radius: 10px !important;
+    border: var(--main-color) solid 1px !important;
+    color: var(--main-color) !important;
+}
+
+
+.ql-toolbar.ql-snow {
+    border-bottom: 1px solid #ccc !important;
+    border-top: unset;
+    border-left: unset;
+    border-right: unset;
+}
+
+.ql-container.ql-snow{
+    border: unset !important;
+}
+
+.quillWrapper {
+    padding: 1px;
+    border-radius: 10px !important;
+    border: var(--main-color) solid 1px !important;
+}
+
+
+input[placeholder="Search"], input[placeholder="Email"], input[placeholder="Password"], input[placeholder="filter"] {
+    min-height: 20px !important;
+    height: 20px !important;
+    border: var(--main-color) solid 1px !important;
+    color: var(--main-color) !important;
+    border-radius: 10px !important;
+}
+
+.v-field--variant-solo {
+    box-shadow: unset !important;
+}
+
+.primary-text {
+    color: var(--main-color) !important;
+}
+
+.user-name {
+    color: var(--main-color) !important;
+    text-transform: capitalize;
+}
+
+.breadcrumb {
+    border-bottom: solid var(--main-color) 1px !important;
+}
+
+.home-btn i {
+    color: var(--main-color) !important;
+}
+
+.home-btn span {
+    font-weight: normal;
+    font-size: 13px;
+    color: var(--main-color) !important;
+}
+
+.user-home {
+    padding: 8px;
+    color: var(--main-color);
+}
+
+.user-home:hover {
+    padding: 8px;
+    background: var(--main-color);
+    color: white !important;
+}
+
+.user-home.active {
+    padding: 8px;
+    background: #a4d1e1;
+    color: white !important;
+}
+
+.border-bottom-main {
+    border-bottom: var(--main-color) solid 2px !important;
+}
+
+.border-top-main {
+    border-top: var(--main-color) solid 2px !important;
+}
+
+.main-top-dashed-border {
+    border-top: var(--main-color) dashed 1px !important;
+}
+
+.main-bottom-dashed-border {
+    border-bottom: var(--main-color) dashed 1px !important;
+}
+
+.white-top-dashed-border {
+    border-top: white dashed 1px !important;
+}
+
+.white-bottom-dashed-border {
+    border-bottom: white dashed 1px !important;
+}
+
+.white-bottom-border {
+    border-bottom: white solid 1px !important;
+}
+
+.v-input__control {
+    color: var(--main-color) !important;
+    border-radius: 8px !important;
+}
+
+.white-top-dashed-border {
+    border-top: var(--main-color) dashed 1px !important;
+}
+
+.white-bottom-dashed-border {
+    border-bottom: var(--main-color) dashed 1px !important;
+}
+
+.general-btn {
+    border-radius: 50px !important;
+    width: 40px !important;
+    height: 60px !important;
+    color: var(--main-color);
+    background-color: white !important;
+    border: solid 1px var(--main-color) !important;
+    font-size: 30px !important;
+    box-shadow: unset !important;
+}
+
+.general-btn:hover {
+    color: white !important;
+    border: solid 1px white !important;
+    background-color: var(--main-color) !important;
+}
+
+.v-field--appended:has(.translation-btn) {
+    padding: 0 !important;
+}
+
+.v-field__append-inner:has(.translation-btn) {
+    padding: 6px 0;
+}
+
+.main-general-btn {
+    border-radius: 50px !important;
+    width: 40px !important;
+    height: 60px !important;
+    color: white;
+    background-color: var(--main-color) !important;
+    border: var(--main-color) 1px var(--main-color) !important;
+    font-size: 30px !important;
+    box-shadow: unset !important;
+}
+
+.breadcrumb_text {
+    text-decoration: none !important;
+}
+
+.questionnaire-info:not(.questionnaire-info:has(.quick_edit)):hover {
+    cursor: pointer !important;
+    background: var(--secondary-color) !important;
+}
+
+.cursor_pointer {
+    cursor: pointer !important;
+}
+
+.font-size-medium {
+    font-size: 20px;
+}
+
+input {
+    cursor: pointer !important;
+}
+
+.v-messages__message {
+    color: #db0000 !important;
+    font-weight: bold;
+}
+
+/*Scroll custom style start*/
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #c4c4c4;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/*Scroll custom style finish*/
+.grey-bg {
+    background: #f3f3f3;
+}
+
+.disabled{
+  color: #bcbcbc !important;
+  background: #efefef !important;
+}
+
+.overflow-cols {
+  height: calc(100vh - 64px - 41px - 45px) !important;
+  overflow-y: auto !important;
+  overflow-x: hidden;
+  width: 100% !important;
+}
+.overflow-timeline{
+  height: calc(100vh - 350px) !important;
+  overflow-y: auto !important;
+  overflow-x: hidden;
+  width: 100% !important;
+}

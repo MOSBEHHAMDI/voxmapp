@@ -1,0 +1,87 @@
+{
+  "name": "voxfront",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build  --minify false",
+    "build-watch": "vite build --watch",
+    "build-dev": "vite build --watch --mode development --minify false",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mdi/font": "7.0.96",
+    "@tinywisp/vue-tree": "^3.2.2",
+    "@vue/cli-plugin-eslint": "^5.0.8",
+    "axios": "^1.6.2",
+    "braintree-web": "^3.95.0-beta-3ds.1",
+    "core-js": "^3.29.0",
+    "graphql": "^16.8.1",
+    "graphql-tag": "^2.12.6",
+    "kompas": "^0.0.2",
+    "localforage": "^1.10.0",
+    "moment": "^2.30.1",
+    "monotone-chain-convex-hull": "^1.1.0",
+    "ol": "latest",
+    "paypal-checkout": "^4.0.338",
+    "pinia": "^2.1.7",
+    "roboto-fontface": "*",
+    "twtree": "^4.3.1",
+    "vue": "^3.4.0",
+    "vue-axios": "^3.5.2",
+    "vue-router": "^4.0.0",
+    "vue3-editor": "^0.1.1",
+    "vue3-smooth-dnd": "^0.0.6",
+    "vuetify": "^3.5.0",
+    "vuetify-sonner": "^0.3.14",
+    "vuetify-use-dialog": "^0.6.2",
+    "webfontloader": "^1.0.0"
+  },
+  "devDependencies": {
+    "@starley/barcodescanner-sdk31": "^8.1.2",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "cordova": "^12.0.0",
+    "cordova-android": "^12.0.0",
+    "cordova-browser": "^7.0.0",
+    "cordova-plugin-camera": "^7.0.0",
+    "cordova-plugin-device": "^2.1.0",
+    "cordova-plugin-file": "^8.0.1",
+    "cordova-plugin-geolocation": "^5.0.0",
+    "cordova-plugin-inappbrowser": "^6.0.0",
+    "cordova-plugin-network-information": "^3.0.0",
+    "cordova-plugin-splashscreen": "^6.0.1",
+    "eslint": "^8.22.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "sass": "^1.60.0",
+    "vite": "^5.0.0",
+    "vite-plugin-vuetify": "^2.0.0"
+  },
+  "cordova": {
+    "platforms": [
+      "android",
+      "browser"
+    ],
+    "plugins": {
+      "@starley/barcodescanner-sdk31": {
+        "ANDROID_SUPPORT_V4_VERSION": "28.+"
+      },
+      "cordova-plugin-camera": {
+        "ANDROID_SUPPORT_V4_VERSION": "28.+",
+        "ANDROIDX_CORE_VERSION": "1.6.+"
+      },
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-geolocation": {
+        "GPS_REQUIRED": "true"
+      },
+      "cordova-plugin-network-information": {},
+      "phonegap-plugin-barcodescanner": {
+        "ANDROID_SUPPORT_V4_VERSION": "28.+"
+      },
+      "cordova-plugin-file": {
+        "ANDROIDX_WEBKIT_VERSION": "1.4.0"
+      },
+      "cordova-plugin-inappbrowser": {}
+    }
+  }
+}

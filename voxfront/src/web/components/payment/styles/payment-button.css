@@ -1,0 +1,42 @@
+.btn {
+    line-height: inherit;
+    position: relative;
+    border: 1px solid #dddddd;
+    background-color: #a1a1a1;
+    color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 0.5rem 2.5rem;
+    min-width: 18rem;
+    min-height: 1rem;
+    transition: all 200ms ease;
+    contain: content;
+    overflow: hidden;
+}
+
+.btn::before {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    content: "";
+    height: 0.5rem;
+    aspect-ratio: 1;
+    background-color: rgb(48, 48, 48);
+    opacity: 0;
+    border-radius: 50%;
+    transition: all 200ms ease;
+    z-index: -1;
+}
+
+.btn:not(:disabled):is(:hover, :focus-visible) {
+    background-color: #707070;
+}
+
+.btn:active::before {
+    height: 30rem;
+    opacity: 1;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    background-color: #bdbdbd;
+}

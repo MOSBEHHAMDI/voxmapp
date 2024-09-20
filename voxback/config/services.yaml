@@ -1,0 +1,69 @@
+# This file is the entry point to configure your own services.
+# Files in the packages/ subdirectory configure your dependencies.
+
+# Put parameters here that don't need to change on each machine where the app is deployed
+# https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
+parameters:
+    VOXMAPP_CLIENT: '%env(VOXMAPP_CLIENT)%'
+    uploads_directory: '%kernel.project_dir%/uploads'
+
+
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+    App\Controller\:
+        resource: '../src/Controller'
+        tags: [ 'controller.service_arguments' ]
+
+    utils:
+        class: App\Service\Utils
+        public: true
+
+    ExportService:
+        class: App\Service\ExportService
+        public: true
+
+    # makes classes in src/ available to be used as services
+    # this creates a service per class whose id is the fully-qualified class name
+    App\:
+        resource: '../src/'
+        exclude:
+            - '../src/DependencyInjection/'
+            - '../src/Entity/'
+            - '../src/Kernel.php'
+
+    App\Doctrine\CollectionQueryExtension:
+        tags:
+            - { name: api_platform.doctrine.orm.query_extension.collection }
+
+    app.event.AuthenticationSuccessListener:
+        class: App\EventListener\AuthenticationSuccessListener
+        tags:
+            - { name: kernel.event_listener, event: lexik_jwt_authentication.on_authentication_success, method: onAuthenticationSuccessResponse }
+
+    # add more service definitions when explicit configuration is needed
+    # please note that last definitions always *replace* previous ones
+    App\State\UserPasswordHasher:
+        bind:
+            $processor: '@api_platform.doctrine.orm.state.persist_processor'
+
+    kernel.listener.prefix:
+        class: App\EventListener\TableSchemaListener
+        # Adding the table_prefix configuration
+        calls:
+            - [ setClient, [ '%VOXMAPP_CLIENT%' ] ]
+        tags:
+            - { name: doctrine.event_listener, event: loadClassMetadata, method: loadClassMetadata }
+
+    App\Service\Gateway:
+        arguments:
+            $environment: '%env(ENVIRONMENT)%'
+            $merchantId: '%env(MERCHANT_ID)%'
+            $publicKey: '%env(PUBLIC_KEY)%'
+            $privateKey: '%env(PRIVATE_KEY)%'
+
+    'App\Serializer\CustomItemNormalizer':
+         arguments: [ '@api_platform.serializer.normalizer.item' ]
